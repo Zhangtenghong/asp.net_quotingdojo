@@ -1,0 +1,11 @@
+﻿@using quotingdojo.Models
+@model Quote
+
+<form action="/create" method="post">
+  <label>Your Name:</label>
+  <input type="text" name="name"><br>
+  <label>Your Quote:</label>
+  <textarea name="quote"></textarea><br>
+  <button>Add my quote!</button>
+  <button><a href="/quotes">Skip to quotes!</a></button>
+</form>

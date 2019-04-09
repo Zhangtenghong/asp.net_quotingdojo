@@ -1,0 +1,13 @@
+@using quotingdojo.Models
+@model List<Dictionary<string, object>>
+  
+<h1>Here are the awesome quotes!</h1>
+<ul>
+@foreach(var quote in @Model)
+{
+    <!-- Remember, these are Dictionaries - so you must use user["KeyName"] to access the values within -->
+    <li>@quote["quote"]</li>
+    <li>@quote["name"]</li>
+    <br>
+}
+</ul>
